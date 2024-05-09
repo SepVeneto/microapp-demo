@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <title>Vite + Vue + TS</title>
+    <script>
+      console.log(window.document === window.rawWindow.document)
+      console.log(window.document.head === window.rawWindow.document.head)
+      // window.document.head.innerHTML += '<meta name="viewport" content="width=device-width, initial-scale=1.0" />'
+      console.log('document write')
+      window.document.write('<meta name="viewport" content="width=device-width, initial-scale=1.0" />')
+    </script>
+  </head>
+  <body>
+    <div id="app"></div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
